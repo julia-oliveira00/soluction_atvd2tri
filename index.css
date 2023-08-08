@@ -1,0 +1,6 @@
+body{
+    background-color: rgb(36, 17, 17);
+}
+label, table, th, tr{
+    color: aliceblue;
+}

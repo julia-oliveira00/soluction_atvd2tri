@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Dados Pessoais</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    <script src='index.js'></script>
+</head>
+<body>
+    <div>
+        <table id="tabela">
+            <tr>
+                <th>Dados</th>
+            </tr>
+        </table>
+    </div>
+    <script>
+        import {criaLista} from './index.js';
+        console.log(nomes[0]);
+        
+        let tabela = document.getElementById("tabela").innerHTML = "<tr><th>Nome</th><th>Email</th><th>CPF</th><th>Gênero</th><th>Data de Nascimento</th><th>Telefone</th><th>Nome</th></tr>";
+        
+        for(let i=0; i <= (dadosLista.length-1); i++) {
+        tabela += "<tr><td>" + dadosLista[i] + "</td><td>" + emails[i] + "</td><td>" + CPFs[i] + "</td><td>" + generos[i] + "</td><td>" + nascimentos[i] + "</td><td>" + telefones[i] + "</td><td><button onclick='editar(this.parentNode.parentNode.rowIndex)'>Editar</button><button onclick='excluir(this.parentNode.rowIndex)'>Excluir</button></td></tr>";
+    }
+    </script>
+</body>
+</html>

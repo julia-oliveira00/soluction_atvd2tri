@@ -3,11 +3,34 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title></title>
+    <title>Dados Pessoais</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
     <script src='index.js'></script>
 </head>
 <body>
+    <div class="container">
+        <label id="nome">Nome Completo:</label>
+        <input id="nomeUser" type="text"><br>
+
+        <label id="email">E-mail:</label>
+        <input id="emailUser" type="email"><br>
+
+        <label id="cpf">CPF:</label>
+        <input id="userCpf" type="number"><br>
+        
+        <label id="genero">Gênero:</label>
+        <input id="userGenero" type="text"><br>
+        
+        <label id="birthDate">Data de Nascimento:</label>
+        <input id="userBirth" type="date"><br>
+        
+        <label id="numero">Telefone:</label>
+        <input id="telefoneUser" type="number"><br>
+    
+        <button class="btn btn-primary" type="button" onclick="salvarData()">Salvar</button>
+
+        <table id="tabela2"></table>
+    </div>
 </body>
 </html>
